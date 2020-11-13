@@ -1,0 +1,104 @@
+.header-logo {
+  display: block;
+  height: 50px;
+}
+
+.modal {
+  width: 600px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  margin-left: -300px;
+  z-index: -100;
+  display: block;
+  top: 100px;
+  height: 300px;
+  opacity: 0;
+}
+
+.modal:before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.modal-inner {
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 10px;
+}
+
+.modal-close:before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.modal-close:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.modal.opened {
+  z-index: 100;
+  opacity: 1;
+  transition: z-index 0.5s ease-out;
+  transition: opacity 0.7s ease-out;
+}
+
+.marginTubs {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid silver;
+}
+
+.news-title {
+  margin-left: 150px;
+}
+
+.news-blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.newsBlock {
+  background: url(http://dummyimage.com/300);
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  padding: 30px;
+}
+
+.footerSB {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgInstruct:hover {
+  width: 200px;
+  height: 200px;
+}
